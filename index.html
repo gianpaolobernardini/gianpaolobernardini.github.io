@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html language="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" src="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.2/underscore-umd-min.js"></script>
+    <script src="loader.js"></script>
+    <script src="spiderLib.js"></script>
+    <script src="https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+
+    <title>On life expectancy</title>
+</head>
+
+<body>
+    <div id="container">
+        <img id="wordCloud" src="wordCloud.png" alt="wordCloud" class="center">
+        <h1> On life expectancy </h1>
+        <h2> The aim of this data visualization analysis </h2>
+        <p>
+            Looking at the data provided it is possible to extract some aspects related to the life expectancy in
+            developed and developing countries.<br>
+            By comparing attributes it is possible to reach conclusions.<br>
+            Important notice: all parameters have been taken from 2000 to 2015.
+        </p>
+        <h3> The life expectancy </h3>
+        <p>
+            Final averages have been converted into percentages and rounded to the nearest integer.
+        </p>
+        <p>
+            The average of life expectancy is represented using bars.
+            The plot is interactive, you can select any of the 192 countries (from one to all) and decide how to sort
+            the
+            bars.<br>
+            In olive green the developing countries, in laurel green the developed.<br>
+            The developed countries have in general, a higher life expectancy respect to the developing.
+        </p>
+        <div class="mainPlotContainer">
+            <div id="mainPlot" class="mainPlot"></div>
+            <div class="mainPlotChecklist">
+                <h3 class="checklistHeader"> Countries:</h3>
+                <div class="checkboxlist" id="countries_checklist">
+                </div>
+                <button type="button" onclick="mainPlot_selectAll()"> Select all </button>
+                <button type="button" onclick="mainPlot_clearAll()"> Clear all </button>
+                <label class="sort_label" for="sorting_main">Sort by:</label>
+                <select name="sorting_main" id="sorting_main" onchange="mainPlot_update()">
+                    <option value="score_asc"> Life Expectancy (asc) </option>
+                    <option value="score_des" selected=""> Life Expectancy (desc) </option>
+                    <option value="alpha_asc"> Country (asc) </option>
+                    <option value="alpha_des"> Country (desc) </option>
+                </select>
+            </div>
+        </div>
+        <h3> Infant Death vs Life Expectancy </h3>
+        <p> The infant death rate is the number of infant deaths per 1000 population.
+            <br>
+            Which correlation there is between infant death rate and life expectancy?
+            <br>
+            I have choosen the 10 top most developed countries with the best life expectancy vs the 10 developing
+            countries with the worst life expectancy, comparing their average infant death rate.<br>
+            The plot is interactive, play and do the comparisons you wish, changing the order of the elements.
+        </p>
+        <div>
+            <label class="sort_label" for="sorting_divergent">Sort by:</label>
+            <select name="sorting_divergent" id="sorting_divergent" onchange="divergent_update()">
+                <option value="aid_asc"> Infant Death (asc) </option>
+                <option value="aid_des"> Infant Death (desc) </option>
+                <option value="ale_asc"> Life Expectancy (asc) </option>
+                <option value="ale_des" selected=""> Life Expectancy (desc) </option>
+            </select>
+            <div id="divergent">
+
+            </div>
+        </div>
+
+        <h3> Life expectancy trends </h3>
+        <p>
+            In the following plot a detalied view of the life expectancy parameter country is represented.
+            Here are presented 5 developed countries with high life expectancy against 5 developing countries
+            with low life expectancy.<br>
+            Hovering one country name from the board list at the bottom, mutes all the others, showing the country
+            trend.<br>
+            As may be noticed, both developing countries and developed ones have ascending trend over time.
+        </p>
+        <div id="parallelCoords"></div>
+        <h3> Health parameters </h3>
+        <p>
+            Each radar contains the average of the parameter analyzed.<br>
+            The plot is interactive: you can pick maximum three countries you wish to compare from the selection
+            curtains.
+            Each country is associated with the corresponding legend color. <br>
+            The spider chart for each category of the index is filled with a coloured area shaped depending on the
+            subsection scores. Hovering the area of a country it is highlighted.
+            Hovering the dots will reveal the precise values of each parameter.
+            Lastly, hovering the section numbers of the axes, the parameter names appear.<br>
+            The parameters for the first chart have been:<br>
+        <ol>
+            <li>BMI</li>
+            <li>Thinness between 1-19</li>
+            <li>Thinness between 5-9</li>
+        </ol>
+        </p>
+        <p>For these last two, the higher the value, the worst is the health of the youngest.<br>
+            BMI has been divided by 10 in order to adapt to the scale of the other two.<br>
+            In general, developed countries have a higher BMI and lower thinnesses and developing countries have a lower
+            BMI and higher thinnesses.
+        </p>
+        <p>
+            For the second chart have been considered:<br>
+        <ol>
+            <li>Hepatitis B</li>
+            <li>Measles</li>
+            <li>Polio</li>
+        </ol>
+        </p>
+        <p>Notice for example that also developed countries can have high indices in this chart, for example
+            the one regardings polio and measles.<br>
+            Remember that these stats are covering years from 2000 to 2015.
+        </p>
+        <div>
+            <div class="selectGroup">
+                <div class="selectAndLabel">
+                    <select name="country1_spider" id="country1_spider" onchange="spider_update()">
+                    </select>
+                </div>
+                <div class="selectAndLabel">
+                    <select name="country2_spider" id="country2_spider" onchange="spider_update()">
+                    </select>
+                </div>
+                <div class="selectAndLabel">
+                    <select name="country3_spider" id="country3_spider" onchange="spider_update()">
+                    </select>
+                </div>
+            </div>
+            <div class="spiders">
+                <div id="spider1" class="radarChart1">
+                    <div class="tooltip tooltipSpider1" style="opacity: 0;"></div>
+                </div>
+                <div id="spider2" class="radarChart2">
+                    <div class="tooltip tooltipSpider2" style="opacity: 0;"></div>
+                </div>
+            </div>
+        </div>
+
+        <h2> Complete methodology and datasets </h2>
+        <h3> About the research process </h3>
+        <h4>From October 2022 to January 2023</h4>
+        <p class="pResearch">
+            The idea on this project has born in October 2022; I started working on the project in October 2022
+            until January 2023.
+        </p>
+        <h3> Datasets </h3>
+        <p><a href="https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who">Here</a>
+        you can find the full dataset.</p>
+    </div>
+    <footer>
+        <div class="footerContainer">
+            <div class="footerImg">
+                <img src="logo.png">
+            </div>
+            <div class="footerText">
+                <h1 class="footerh1"> Data Visualization final project </h1>
+                <p> Gian Paolo Bernardini S2765798
+                </p>
+                <p> <strong> A.Y.: </strong> 2021/2022 </p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="mainPlot.js"></script>
+    <script src="divergent.js"></script>
+    <script src="parallelCoords.js"></script>
+    <script src="spiders.js"></script>
+
+    <div id="torrent-scanner-popup" style="display: none;"></div>
+</body>
+
+</html>

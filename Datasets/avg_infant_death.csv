@@ -1,0 +1,21 @@
+﻿Country,Status,Avg_Infant_Deaths,Avg_Life_expectancy
+Japan,Developed,2.8,82.5375
+Sweden,Developed,0,82.51875
+Iceland,Developed,0,82.44375
+Switzerland,Developed,0,82.33125
+France,Developed,2.9,82.21875
+Italy,Developed,2,82.1875
+Spain,Developed,1.6,82.06875
+Australia,Developed,1,81.8125
+Norway,Developed,0,81.79375
+Canada,Developed,2,81.6875
+Sierra Leone,Developing,27.5,46.1125
+Central African Republic,Developing,16.5,48.5125
+Lesotho,Developing,4.5,48.78125
+Angola,Developing,83.7,49.01875
+Malawi,Developing,37.1,49.89375
+Chad,Developing,44.8,50.3875
+Côte d'Ivoire,Developing,61.5,50.3875
+Zimbabwe,Developing,26.5,50.4875
+Swaziland,Developing,2.6,51.325
+Nigeria,Developing,535.6,51.35625

@@ -1,0 +1,194 @@
+﻿Country,Status,Avg_Life_expectancy
+United States of America,Developed,78.0625
+United Kingdom of Great Britain and Northern Ireland,Developed,80.79375
+Switzerland,Developed,82.33125
+Sweden,Developed,82.51875
+Spain,Developed,82.06875
+Slovenia,Developed,79.73125
+Slovakia,Developed,74.75
+Singapore,Developed,81.475
+Romania,Developed,74.05
+Portugal,Developed,79.99375
+Poland,Developed,75.65
+Norway,Developed,81.79375
+New Zealand,Developed,81.3375
+Netherlands,Developed,81.13125
+Malta,Developed,80.3625
+Luxembourg,Developed,80.78125
+Lithuania,Developed,72.80625
+Latvia,Developed,73.73125
+Japan,Developed,82.5375
+Italy,Developed,82.1875
+Ireland,Developed,80.15
+Iceland,Developed,82.44375
+Hungary,Developed,73.825
+Germany,Developed,81.175
+Denmark,Developed,79.25625
+Czechia,Developed,76.76875
+Cyprus,Developed,79.675
+Croatia,Developed,76.11875
+Bulgaria,Developed,72.85
+Belgium,Developed,80.68125
+Austria,Developed,81.48125
+Australia,Developed,81.8125
+Zimbabwe,Developing,50.4875
+Zambia,Developing,53.90625
+Yemen,Developing,63.8625
+Viet Nam,Developing,74.775
+Venezuela (Bolivarian Republic of),Developing,73.3875
+Vanuatu,Developing,71.3875
+Uzbekistan,Developing,68.03125
+Uruguay,Developing,76.075
+United Republic of Tanzania,Developing,56.00625
+United Arab Emirates,Developing,75.7
+Ukraine,Developing,69.9375
+Uganda,Developing,55.70625
+Tuvalu,Developing,
+Turkmenistan,Developing,64.61875
+Turkey,Developing,73.9125
+Tunisia,Developing,74.35625
+Trinidad and Tobago,Developing,71.06875
+Tonga,Developing,72.53125
+Togo,Developing,56.6625
+Timor-Leste,Developing,64.75625
+The former Yugoslav republic of Macedonia,Developing,74.1125
+Thailand,Developing,73.08125
+Tajikistan,Developing,66.65625
+Syrian Arab Republic,Developing,70.85
+Swaziland,Developing,51.325
+Suriname,Developing,70.08125
+Sudan,Developing,61.825
+Sri Lanka,Developing,73.4
+South Sudan,Developing,53.875
+South Africa,Developing,57.5
+Somalia,Developing,53.31875
+Solomon Islands,Developing,67.7125
+Sierra Leone,Developing,46.1125
+Seychelles,Developing,72.375
+Serbia,Developing,73.95625
+Senegal,Developing,62.56875
+Saudi Arabia,Developing,73.46875
+Sao Tome and Principe,Developing,65.1625
+San Marino,Developing,
+Samoa,Developing,73.61875
+Saint Vincent and the Grenadines,Developing,73.475
+Saint Lucia,Developing,73.6
+Saint Kitts and Nevis,Developing,
+Rwanda,Developing,59.3125
+Russian Federation,Developing,67.7625
+Republic of Moldova,Developing,69.98125
+Republic of Korea,Developing,80.4875
+Qatar,Developing,77.03125
+Philippines,Developing,67.575
+Peru,Developing,73.6625
+Paraguay,Developing,73.1125
+Papua New Guinea,Developing,61.68125
+Panama,Developing,76.4875
+Palau,Developing,
+Pakistan,Developing,64.5
+Oman,Developing,74.84375
+Niue,Developing,
+Nigeria,Developing,51.35625
+Niger,Developing,56.98125
+Nicaragua,Developing,73.45
+Nepal,Developing,66.48125
+Nauru,Developing,
+Namibia,Developing,60.4
+Myanmar,Developing,64.2
+Mozambique,Developing,53.39375
+Morocco,Developing,72.15625
+Montenegro,Developing,74.5
+Mongolia,Developing,65.8875
+Monaco,Developing,
+Micronesia (Federated States of),Developing,68.2
+Mexico,Developing,75.71875
+Mauritius,Developing,72.7125
+Mauritania,Developing,62.8
+Marshall Islands,Developing,
+Mali,Developing,54.9375
+Maldives,Developing,75.5375
+Malaysia,Developing,73.75625
+Malawi,Developing,49.89375
+Madagascar,Developing,62.74375
+Libya,Developing,72.4875
+Liberia,Developing,57.525
+Lesotho,Developing,48.78125
+Lebanon,Developing,74.2
+Lao People's Democratic Republic,Developing,62.38125
+Kyrgyzstan,Developing,69.08125
+Kuwait,Developing,73.84375
+Kiribati,Developing,65.15
+Kenya,Developing,57.48125
+Kazakhstan,Developing,66.7625
+Jordan,Developing,72.9875
+Jamaica,Developing,74.29375
+Israel,Developing,81.3
+Iraq,Developing,70.35625
+Iran (Islamic Republic of),Developing,73.85625
+Indonesia,Developing,67.55625
+India,Developing,65.41875
+Honduras,Developing,72.99375
+Haiti,Developing,59.86875
+Guyana,Developing,65.6375
+Guinea-Bissau,Developing,55.36875
+Guinea,Developing,56.0125
+Guatemala,Developing,71.73125
+Grenada,Developing,73.29375
+Greece,Developing,81.21875
+Ghana,Developing,60.8625
+Georgia,Developing,73.50625
+Gambia,Developing,59.4625
+Gabon,Developing,62.24375
+France,Developed,82.21875
+Finland,Developed,80.7125
+Fiji,Developing,68.7125
+Ethiopia,Developing,59.1125
+Estonia,Developing,74.94375
+Eritrea,Developing,60.6875
+Equatorial Guinea,Developing,55.3125
+El Salvador,Developing,71.74375
+Egypt,Developing,71.5
+Ecuador,Developing,74.725
+Dominican Republic,Developing,72.34375
+Dominica,Developing,
+Djibouti,Developing,60.75625
+Democratic Republic of the Congo,Developing,55.6875
+Democratic People's Republic of Korea,Developing,69.19375
+Cuba,Developing,77.975
+Côte d'Ivoire,Developing,50.3875
+Costa Rica,Developing,78.59375
+Cook Islands,Developing,
+Congo,Developing,59.04375
+Comoros,Developing,61.58125
+Colombia,Developing,73.2875
+China,Developing,74.2625
+Chile,Developing,79.45
+Chad,Developing,50.3875
+Central African Republic,Developing,48.5125
+Canada,Developed,81.6875
+Cameroon,Developing,54.01875
+Cambodia,Developing,64.34375
+Cabo Verde,Developing,72.51875
+Burundi,Developing,55.5375
+Burkina Faso,Developing,55.64375
+Brunei Darussalam,Developing,76.4875
+Brazil,Developing,73.38125
+Botswana,Developing,56.05
+Bosnia and Herzegovina,Developing,75.96875
+Bolivia (Plurinational State of),Developing,67.70625
+Bhutan,Developing,66.1625
+Benin,Developing,57.56875
+Belize,Developing,69.26875
+Belarus,Developing,69.90625
+Barbados,Developing,74.35625
+Bangladesh,Developing,69.3
+Bahrain,Developing,75.725
+Bahamas,Developing,74.2875
+Azerbaijan,Developing,70.73125
+Armenia,Developing,73.4
+Argentina,Developing,75.15625
+Antigua and Barbuda,Developing,75.05625
+Angola,Developing,49.01875
+Algeria,Developing,73.61875
+Albania,Developing,75.15625
+Afghanistan,Developing,58.19375
